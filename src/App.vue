@@ -14,6 +14,7 @@
         <p class="text-white/50 text-sm">{{ user.first_name }} ({{ user.language_code }})</p>
       </div>
     </div>
+    <ScrollShedule />
   </div>
   <BottomMenu />
  </div>
@@ -21,6 +22,7 @@
 
 <script setup lang="ts">
 import BottomMenu from './components/BottomMenu.vue';
+import ScrollShedule from './components/ScrollShedule.vue';
 import { useTelegram } from './services/telegram';
 
 const { tg, user } = useTelegram()
